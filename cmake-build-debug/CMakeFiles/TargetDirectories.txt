@@ -1,0 +1,3 @@
+A:/lebedev/C++/Tetris/Tetris/cmake-build-debug/CMakeFiles/..dir
+A:/lebedev/C++/Tetris/Tetris/cmake-build-debug/CMakeFiles/edit_cache.dir
+A:/lebedev/C++/Tetris/Tetris/cmake-build-debug/CMakeFiles/rebuild_cache.dir
