@@ -118,9 +118,13 @@ int main()
 
             if (!a.check(field)) {
                 a = b;
+//                std::cout << "not" << " ";
             } else {
+//                std::cout << "yes1" << " ";
                 b.fromfield(field);
+//                std::cout << "yes2" << " ";
                 a.tofield(field);
+//                std::cout << "yes3" << " ";
             }
 
             b = a;
@@ -132,7 +136,7 @@ int main()
                     b.stop();
                     b.tofield(field);
                     for (int i = 0; i < width; ++i) {
-                        if (field[0][i].getStat() == 1) {
+                        if (field[1][i].getStat() == 1) {
 //                            std::cout << "stop";
                             FINAL = true;
                         }

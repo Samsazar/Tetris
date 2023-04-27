@@ -116,7 +116,7 @@ public:
         color = 1 + type;
         for (int i = 0; i < 4; i++)
         {
-            Tile newTile(shapes[type][i] / 2, shapes[type][i] % 2, '#', 2, color);
+            Tile newTile(shapes[type][i] % 2, shapes[type][i] / 2, '#', 2, color);
             tiles.push_back(newTile);
         }
     };
@@ -193,7 +193,7 @@ public:
     bool check(Field field, int dx = 0) {
         for (int i = 0; i < tiles.size(); i++) {
             // Check for the shape being in the playfield.
-            if (tiles[i].getX() < 0 || tiles[i].getX() >= field.get_width())
+            if (tiles[i].getX() < 0 || tiles[i].getX() >= field.get_width() || tiles[i].getY() < 0)
                 return false;
 
             // The more I look at it, the more I want to puke.
