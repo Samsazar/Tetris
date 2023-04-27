@@ -7,7 +7,7 @@ set(SFML_STATIC_LIBRARIES TRUE)
 
 add_executable(. main.cpp)
 
-set(SFML_DIR "C:\\libs\\SFML-2.5.1\\lib\\cmake\\SFML")
+set(SFML_DIR "SFML-2.5.1/lib/cmake/SFML")
 
 target_link_libraries(. sfml-graphics)
 
